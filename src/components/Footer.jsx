@@ -12,7 +12,7 @@ import { AiOutlineSend, AiFillYoutube } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <Box minH="40" bgColor={"blackAlpha.900"} color="white" p="16">
+    <Box minH="40" bgColor={"blackAlpha.900"} color="white" p={["4", "16"]}>
       <Stack direction={["column", "row"]}>
         <VStack alignItems={"stretch"} w="full">
           <Heading size={"md"}>Subscribe For More Videos.</Heading>

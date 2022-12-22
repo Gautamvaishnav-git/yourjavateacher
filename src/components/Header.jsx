@@ -16,6 +16,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  let navProperties = {
+    variant: "ghost",
+    p: "0",
+    colorScheme: "purple",
+  };
   return (
     <>
       <Button
@@ -29,7 +34,7 @@ const Header = () => {
         w="10"
         h="10"
         onClick={onOpen}
-        zIndex={1000}
+        zIndex={"overlay"}
       >
         <BiMenuAltLeft size={"20px"} />
       </Button>
@@ -41,18 +46,21 @@ const Header = () => {
           <DrawerHeader borderBottomWidth="1px">VideosForYou</DrawerHeader>
           <DrawerBody>
             <VStack alignItems={"stretch"}>
-              <Button onClick={onClose} variant="ghost" colorScheme={"purple"}>
-                <Link to="/">Home</Link>
+              <Button {...navProperties} onClick={onClose}>
+                <Link to="/" style={{ width: "100%" }}>
+                  Home
+                </Link>
               </Button>
-              <Button onClick={onClose} variant="ghost" colorScheme={"purple"}>
-                <Link to="/videos">Videos</Link>
-              </Button>
-              <Button onClick={onClose} variant="ghost" colorScheme={"purple"}>
-                <Link to="/freevideos/category=free">Free Videos</Link>
+              <Button {...navProperties} onClick={onClose}>
+                <Link to="/videos" style={{ width: "100%" }}>
+                  Videos
+                </Link>
               </Button>
 
-              <Button onClick={onClose} variant="ghost" colorScheme={"purple"}>
-                <Link to="/upload">Upload video</Link>
+              <Button {...navProperties} onClick={onClose}>
+                <Link to="/upload" style={{ width: "100%" }}>
+                  Upload video
+                </Link>
               </Button>
             </VStack>
             <HStack
@@ -70,7 +78,9 @@ const Header = () => {
                 variant="outline"
                 onClick={onClose}
               >
-                <Link to={"login"}>Sign Up</Link>
+                <Link to={"signup"} style={{ width: "100%" }}>
+                  Sign Up
+                </Link>
               </Button>
             </HStack>
           </DrawerBody>

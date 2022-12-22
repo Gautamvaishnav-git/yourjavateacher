@@ -16,7 +16,7 @@ const ColorModeSwitcher = (props) => {
         p="0"
         w="10"
         h="10"
-        zIndex={1000}
+        zIndex={"overlay"}
         borderRadius="full"
         right="4"
         top="2"
