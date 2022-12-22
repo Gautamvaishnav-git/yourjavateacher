@@ -1,4 +1,4 @@
-# yourjavateacher. 0️⃣2️⃣
+# Your Java Teacher. 0️⃣2️⃣
 
 ### I created this website for a Youtuber who is teaching About Java Development.
 
