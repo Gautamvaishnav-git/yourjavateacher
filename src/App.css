@@ -1,0 +1,10 @@
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: currentColor;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-button {
+  filter: invert(1);
+}
