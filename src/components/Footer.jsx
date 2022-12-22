@@ -40,16 +40,23 @@ const Footer = () => {
           borderLeft={["none", "1px solid white"]}
           borderRight={["none", "1px solid white"]}
         >
-          <Heading size={"lg"} textTransform="uppercase">
-            Videos For You
+          <Heading size={"md"} textTransform="uppercase">
+            Your Java Teacher
           </Heading>
-          <Text>All Right Reserved.</Text>
+          <Text>&copy; All Right Reserved. {new Date().getFullYear()} </Text>
         </VStack>
         <VStack w="full">
           <Heading size={"md"} textTransform="uppercase">
             Social media
           </Heading>
-          <Button variant={"link"} colorScheme="white">
+          <Button
+            variant={"link"}
+            colorScheme="white"
+            display={"flex"}
+            flexDirection={"row"}
+            gap="1"
+          >
+            <AiFillYoutube />
             <a
               href="https://www.youtube.com/@YourJavaTeacher"
               target={"_blank"}
